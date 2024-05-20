@@ -88,14 +88,11 @@ namespace MAIN_LIBRARY{
             get { return otchestvo; }
             set { otchestvo = value; }
         }
-
-
         private DateTime dateofbirth;
         public DateTime Dateofbirth
         {
             get { return dateofbirth; }
             set { dateofbirth = value; }
-
         }
         public Student(string surname, string name, string otchestvo, DateTime dateofbith, Group1 group1)
         {
