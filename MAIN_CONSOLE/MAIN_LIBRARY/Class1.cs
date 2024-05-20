@@ -37,7 +37,9 @@ namespace MAIN_LIBRARY{
                 else { throw new ArgumentOutOfRangeException(); }
 
             }
-            get { return _salary; }
+            get {
+                return _salary; 
+            }
         }
 
         public Doljnost(string name, double salary, Podrozdelenie podrozdelenie)
@@ -199,7 +201,7 @@ namespace MAIN_LIBRARY{
         private string _sokrachenie;
         private string _chislennost;
         private int _godpostuplenija;
-        private string Sotrudnik _sotrudnic; //Нет варианта 9 (Сотрудник)
+        psrivate string Sotrudnik _sotrudnic; //Нет варианта 9 (Сотрудник)
         private string Specialnost _specialnost; //Нет варианта 6 (Специальность)
         public string Nazvanie
         {
@@ -222,9 +224,11 @@ namespace MAIN_LIBRARY{
             {
                 if (value >= 0) { _godpostuplenija = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
-            get { return _godpostuplenija; }
+            get 
+            {
+                return _godpostuplenija;
+            }
         }
         public string Sotrudnik 
         {
@@ -244,7 +248,6 @@ namespace MAIN_LIBRARY{
             Godpostuplenija = godpostuplenija;
             _sotrudnic = sotrudnic;
             _specialnost = specialnost;
-
         }
     }
     /// <summary>
@@ -252,17 +255,17 @@ namespace MAIN_LIBRARY{
     /// Вариант 3
     /// Доронин Александр
     /// </summary>
-     public class discipline
- {
-     private string name;
-     private string reduction;
+    public class discipline
+    {
+        private string name;
+        private string reduction;
 
-     public discipline(string name, string reduction)
-     {
-         this.name = name;
-         this.reduction = reduction;
-     }
- }
+        public discipline(string name, string reduction)
+        {
+            this.name = name;
+            this.reduction = reduction;
+        }
+    }
     /// <summary>
     /// Класс корпус
     /// Вариант 13
