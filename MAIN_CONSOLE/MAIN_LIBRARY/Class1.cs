@@ -25,16 +25,28 @@ namespace MAIN_LIBRARY{
 
         public string Name
         {
-            set { _name = value; }
-            get { return _name; }
+            set 
+            { 
+                _name = value; 
+            }
+            get 
+            { 
+                return _name; 
+            }
         }
 
         public double Salary
         {
             set
             {
-                if (value >= 0) { _salary = value; }
-                else { throw new ArgumentOutOfRangeException(); }
+                if (value >= 0)
+                {
+                    _salary = value; 
+                }
+                else 
+                { 
+                    throw new ArgumentOutOfRangeException(); 
+                }
             }
             get 
             {
