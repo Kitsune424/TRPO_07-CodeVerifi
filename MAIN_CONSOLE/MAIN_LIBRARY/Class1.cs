@@ -35,9 +35,9 @@ namespace MAIN_LIBRARY{
             {
                 if (value >= 0) { _salary = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
-            get {
+            get 
+            {
                 return _salary; 
             }
         }
@@ -293,11 +293,13 @@ namespace MAIN_LIBRARY{
     /// </summary>
     public class Smena
     {
-        public string Name { get; }
+        public string Name
+        {
+            get;
+        }
         public Smena(string name)
         {
             Name = name;
-
         }
     }
     /// <summary>
@@ -377,7 +379,6 @@ namespace MAIN_LIBRARY{
             EndChill = endchill;
             _smena = smena;
         }
-
     }
     /// <summary>
     /// Класс Сотрудник 
@@ -391,8 +392,6 @@ namespace MAIN_LIBRARY{
         private string _Name;
         private string _Otchestvo;
         private Doljnost doljnost;
-
-
 
         public string Surname
         {
@@ -421,10 +420,8 @@ namespace MAIN_LIBRARY{
             _Name = name;
             _Otchestvo= otchestvo;
             _doljnost= doljnost;
-            
         }
     }
-
 }
     
 
