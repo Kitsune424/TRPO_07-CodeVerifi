@@ -11,9 +11,7 @@ using System.Text.RegularExpressions;
 ///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
 #endregion
 
-namespace MAIN_LIBRARY
-{
-    
+namespace MAIN_LIBRARY{
     /// <summary>
     /// Класс должность
     /// Вариант 10
